@@ -1,0 +1,6 @@
+sudo rm -rf blog_mern_app/
+this is to be used to remove previous folders
+
+
+to install the pm2
+sudo npm install -g pm2
