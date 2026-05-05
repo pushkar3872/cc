@@ -1,77 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My AWS Static Website</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #4facfe, #00f2fe);
-            color: white;
-            text-align: center;
-        }
-
-        header {
-            padding: 50px 20px;
-        }
-
-        h1 {
-            font-size: 3rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-
-        .container {
-            margin-top: 50px;
-        }
-
-        button {
-            padding: 12px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            background-color: white;
-            color: #333;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #ddd;
-        }
-
-        footer {
-            margin-top: 100px;
-            padding: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
+  <title>AWS Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #4facfe;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      background: white;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>🚀 Welcome to My Website</h1>
-        <p>Deployed on AWS using Nginx</p>
-    </header>
+  <h1> My AWS Website</h1>
+  <p>Deployed using Nginx</p>
 
-    <div class="container">
-        <p>This is a simple static website.</p>
-        <button onclick="showMessage()">Click Me</button>
-    </div>
-
-    <footer>
-        <p>© 2026 Your Name | Hosted on AWS</p>
-    </footer>
-
-    <script>
-        function showMessage() {
-            alert("Your website is working successfully! 🎉");
-        }
-    </script>
+  <button onclick="alert('Working! 🎉')">Click Me</button>
 
 </body>
 </html>

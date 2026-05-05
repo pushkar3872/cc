@@ -1,0 +1,38 @@
+//take the permission there
+
+chmod 400 your-key.pem
+
+//connect to virtual machine
+
+ssh -i web_app.pem ubuntu@51.20.18.61
+
+//update steps
+sudo apt update
+sudo apt upgrade -y
+
+//install the nginx
+sudo apt install nginx -y
+
+// start and enable it
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+//check is working
+sudo systemctl status nginx
+
+//remove default page
+cd /var/www/html
+sudo rm index.nginx-debian.html
+
+//create our File
+sudo nano index.html
+
+//restart it again
+sudo systemctl restart nginx
+
+//if the index.html is not updatable
+sudo chown -R ubuntu:ubuntu /var/www/html
+
+
+
+
